@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up Form</h2>
+        <form id="signupForm" onSubmit="validateForm(event)">
+            <!-- Full Name -->
+            <input type="text" id="name" class="form-control" placeholder="Full Name" onChange="validateName()">
+            <small class="error" id="nameError"></small>
+
+            <!-- Email -->
+            <input type="email" id="email" class="form-control" placeholder="Email" onChange="validateEmail()">
+            <small class="error" id="emailError"></small>
+
+            <!-- Phone Number -->
+            <input type="text" id="phone" class="form-control" placeholder="Phone Number" onChange="validatePhone()">
+            <small class="error" id="phoneError"></small>
+
+            <!-- Password -->
+            <input type="password" id="password" class="form-control" placeholder="Password" onChange="validatePassword()">
+            <small class="error" id="passwordError"></small>
+
+            <!-- Confirm Password -->
+            <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" onChange="validateConfirmPassword()">
+            <small class="error" id="confirmPasswordError"></small>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

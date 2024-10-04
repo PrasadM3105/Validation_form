@@ -1,0 +1,90 @@
+/* Styling the body */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the form */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Form title */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Error messages */
+.error {
+    color: #ff4d4d; /* Red color for errors */
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Styling for the submit button */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Input focus effect */
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Small screen adjustments */
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+}
+/* Background color for the entire page */
+body {
+    background-color: #add8e6; /* Light blue for page background */
+    font-family: Arial, sans-serif;
+}
+
+/* Background color for the form container */
+.container {
+    max-width: 500px;
+    margin: 50px auto; /* Center form */
+    background-color: #ffffff; /* White form background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
